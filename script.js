@@ -1,23 +1,23 @@
-let currencyRate = [
-  {
-    timestamp: new Date().toLocaleDateString(),
-    base: "EUR",
-    date: "2023-12-12",
-    rates: {},
-  },
-  {
-    timestamp: new Date().toLocaleDateString(),
-    base: "USD",
-    date: "2023-12-12",
-    rates: {},
-  },
-  {
-    timestamp: new Date().toLocaleDateString(),
-    base: "DKK",
-    date: "2023-12-12",
-    rates: {},
-  },
-];
+// let currencyRate = [
+//   {
+//     timestamp: new Date().toLocaleDateString(),
+//     base: "EUR",
+//     date: "2023-12-12",
+//     rates: {},
+//   },
+//   {
+//     timestamp: new Date().toLocaleDateString(),
+//     base: "USD",
+//     date: "2023-12-12",
+//     rates: {},
+//   },
+//   {
+//     timestamp: new Date().toLocaleDateString(),
+//     base: "DKK",
+//     date: "2023-12-12",
+//     rates: {},
+//   },
+// ];
 
 const specials = {
   EUR: {
@@ -101,6 +101,7 @@ function onRateSubmit(event) {
   handleCurrencyChange();
   document.getElementById("new_curr").value = "";
   document.getElementById("curr_rate").value = "1";
+  console.log(currencyRate);
 }
 
 function handleCurrencyChange() {
